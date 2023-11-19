@@ -46,8 +46,5 @@ def check_uniqueness(sender, instance, **kwargs):
 
                 if not unique:
                     raise ValidationError('Unable to generate a unique token after {} attempts.'.format(tries))
-            else:
-                pass
-    else:
-        pass
+         
 
