@@ -1,9 +1,7 @@
-from django.contrib.auth import get_user_model
-from django.conf import settings
 from django.core.exceptions import PermissionDenied
 
 from .models import Token
-from .settings import api_settings
+
 
 def auth_by_token(token):
     try:
